@@ -1,0 +1,2842 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Productos — DECORTILES Cerámica S.A.S.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;900&family=League+Spartan:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <img src="logo.png" alt="DecorTiles Logo" class="nav-logo-img" />
+      <div class="nav-logo">Decor<span>tiles</span></div>
+      <ul class="nav-links">
+        <li><a href="#paredes">Paredes</a></li>
+        <li><a href="#porcelanatos">Porcelanatos</a></li>
+        <li><a href="#mallas">Mallas</a></li>
+        <li><a href="#pisos">Pisos 45×45</a></li>
+        <li><a href="#sanitarios">Sanitarios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-search">
+        <input
+          type="text"
+          class="search-input"
+          id="searchInput"
+          placeholder="Buscar producto..."
+          oninput="filterProducts()"
+        />
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-particles" id="heroParticles"></div>
+      <div class="hero-image" id="heroImg"></div>
+      <div class="hero-fade"></div>
+      <div class="hero-content">
+        <div class="hero-logo">
+          <img src="logo.png" alt="Logo" id="logo" class="logo" />
+        </div>
+        <div class="hero-eyebrow">Colección 2026 · Cerámica Premium</div>
+        <h1 class="hero-title">
+          DECORTILES
+          <span>Cerámica</span>
+        </h1>
+        <p class="hero-subtitle">
+          Transformamos espacios en experiencias. Más de 20 años creando
+          ambientes únicos con diseños innovadores y materiales de calidad
+          excepcional.
+        </p>
+        <div class="hero-line"></div>
+        <div class="hero-btns">
+          <a href="#catalogo" class="btn-primary">Ver Catálogo</a>
+          <a href="tel:+573128019770" class="btn-outline">Contactar Asesor</a>
+        </div>
+      </div>
+      <div class="hero-brand">
+        Decortiles
+        <small>Cerámica S.A.S.</small>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- FEATURED WOOD GEOMETRIC -->
+    <section style="padding: 100px 60px 0" id="catalogo">
+      <div class="featured-section" style="padding: 0; margin: 0">
+        <div class="featured-text anim-fade-left">
+          <div class="featured-eyebrow">Colección Especial 2026</div>
+          <h2 class="featured-title">
+            Wood
+            <em>Geometric</em>
+            Design
+          </h2>
+          <p class="featured-desc">
+            Una propuesta innovadora que mezcla madera y geometría para crear
+            espacios únicos y con personalidad. Diseño moderno para interiores y
+            exteriores.
+          </p>
+          <div class="featured-divider"></div>
+          <div class="featured-specs">
+            <div class="spec-row">
+              <div class="spec-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                </svg>
+              </div>
+              <span>32×57 cm</span>
+            </div>
+            <div class="spec-row">
+              <div class="spec-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                  />
+                </svg>
+              </div>
+              <span>Acabado Mate</span>
+            </div>
+            <div class="spec-row">
+              <div class="spec-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"
+                  />
+                </svg>
+              </div>
+              <span>Antideslizante</span>
+            </div>
+            <div class="spec-row">
+              <div class="spec-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <span>Sellado 100%</span>
+            </div>
+            <div class="spec-row">
+              <div class="spec-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="3" width="20" height="14" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </div>
+              <span>Piso / Pared</span>
+            </div>
+          </div>
+        </div>
+        <div class="featured-img anim-fade-right">
+          <img
+            src="Primera entrega/29.png"
+            alt="Wood Geometric Design"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTER + SEARCH ZONE -->
+    <section style="margin-top: 100px">
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="setFilter('todos', this)">
+          Todos
+        </button>
+        <button class="filter-btn" onclick="setFilter('porcelanatos', this)">
+          Porcelanatos
+        </button>
+        <button class="filter-btn" onclick="setFilter('paredes', this)">
+          Paredes
+        </button>
+        <button class="filter-btn" onclick="setFilter('mallas', this)">
+          Mallas
+        </button>
+        <button class="filter-btn" onclick="setFilter('pisos', this)">
+          Pisos 45×45
+        </button>
+        <button class="filter-btn" onclick="setFilter('sanitarios', this)">
+          Sanitarios
+        </button>
+      </div>
+
+      <!-- ALL PRODUCTS GRID (filterable) -->
+      <div class="product-grid" id="allProductsGrid">
+        <!-- =================== PAREDES 30x60 =================== -->
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared larice greige"
+          onclick="
+            openModal(
+              'Pared Larice Greige',
+              'Paredes 30×60',
+              'Primera entrega/1.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/1.png"
+              alt="Pared Larice Greige"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Larice Greige</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared brick ondas plata glossy"
+          onclick="
+            openModal(
+              'Pared Brick Ondas Plata Glossy',
+              'Paredes 30×60',
+              'Primera entrega/2.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/2.png"
+              alt="Pared Brick Ondas Plata Glossy"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Brick Ondas Plata Glossy</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <div class="product-tag">Glossy</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared dalia silver"
+          onclick="
+            openModal(
+              'Pared Dalia Silver',
+              'Paredes 30×60',
+              'Primera entrega/3.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/3.png"
+              alt="Pared Dalia Silver"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Dalia Silver</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared bahia new white"
+          onclick="
+            openModal(
+              'Pared Bahia New White',
+              'Paredes 30×60',
+              'Primera entrega/4.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/4.png"
+              alt="Pared Bahia New White"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Bahia New White</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared larice gris"
+          onclick="
+            openModal(
+              'Pared Larice Gris',
+              'Paredes 30×60',
+              'Primera entrega/5.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/5.png"
+              alt="Pared Larice Gris"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Larice Gris</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared brick blanco brillo"
+          onclick="
+            openModal(
+              'Pared Brick Blanco Brillo',
+              'Paredes 30×60',
+              'Primera entrega/6.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/6.png"
+              alt="Pared Brick Blanco Brillo"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Brick Blanco Brillo</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <div class="product-tag">Brillo</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared treviso brick white"
+          onclick="
+            openModal(
+              'Pared Treviso Brick White',
+              'Paredes 30×60',
+              'Primera entrega/7.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/7.png"
+              alt="Pared Treviso Brick White"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Treviso Brick White</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared wallconcret plata"
+          onclick="
+            openModal(
+              'Pared Wallconcret Plata',
+              'Paredes 30×60',
+              'Primera entrega/8.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/8.png"
+              alt="Pared Wallconcret Plata"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Wallconcret Plata</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared matt punch"
+          onclick="
+            openModal(
+              'Pared Matt Punch',
+              'Paredes 30×60',
+              'Primera entrega/9.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/9.png"
+              alt="Pared Matt Punch"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Matt Punch</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <div class="product-tag">Mate</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared roma beige 285"
+          onclick="
+            openModal(
+              'Pared Roma Beige 285',
+              'Paredes 30×60',
+              'Primera entrega/10.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/10.png"
+              alt="Pared Roma Beige 285"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Roma Beige 285</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared vintage azul"
+          onclick="
+            openModal(
+              'Pared Vintage Azul',
+              'Paredes 30×60',
+              'Primera entrega/11.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/11.png"
+              alt="Pared Vintage Azul"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Vintage Azul</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared marmol venato"
+          onclick="
+            openModal(
+              'Pared Marmol Venato',
+              'Paredes 30×60',
+              'Primera entrega/12.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/12.png"
+              alt="Pared Marmol Venato"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Marmol Venato</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared roma blanca 286"
+          onclick="
+            openModal(
+              'Pared Roma Blanca 286',
+              'Paredes 30×60',
+              'Primera entrega/13.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/13.png"
+              alt="Pared Roma Blanca 286"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Roma Blanca 286</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared 1475-d glossy"
+          onclick="
+            openModal(
+              'Pared 1475-D Glossy',
+              'Paredes 30×60',
+              'Primera entrega/14.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/14.png"
+              alt="Pared 1475-D Glossy"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared 1475-D Glossy</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <div class="product-tag">Glossy</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared ondas gris mate"
+          onclick="
+            openModal(
+              'Pared Ondas Gris Mate',
+              'Paredes 30×60',
+              'Primera entrega/15.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/15.png"
+              alt="Pared Ondas Gris Mate"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Ondas Gris Mate</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <div class="product-tag">Mate</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared chennai 303"
+          onclick="
+            openModal(
+              'Pared Chennai 303',
+              'Paredes 30×60',
+              'Primera entrega/16.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/16.png"
+              alt="Pared Chennai 303"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Chennai 303</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared linea texturizada"
+          onclick="
+            openModal(
+              'Pared Linea Texturizada',
+              'Paredes 30×60',
+              'Primera entrega/17.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/17.png"
+              alt="Pared Linea Texturizada"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Linea Texturizada</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared dehradun 06"
+          onclick="
+            openModal(
+              'Pared Dehradun 06',
+              'Paredes 30×60',
+              'Primera entrega/18.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/18.png"
+              alt="Pared Dehradun 06"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Dehradun 06</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared bambu gris"
+          onclick="
+            openModal(
+              'Pared Bambu Gris',
+              'Paredes 30×60',
+              'Primera entrega/19.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/19.png"
+              alt="Pared Bambu Gris"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Bambu Gris</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared calacata gris"
+          onclick="
+            openModal(
+              'Pared Calacata Gris',
+              'Paredes 30×60',
+              'Primera entrega/20.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/20.png"
+              alt="Pared Calacata Gris"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Calacata Gris</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared gujarat 303"
+          onclick="
+            openModal(
+              'Pared Gujarat 303',
+              'Paredes 30×60',
+              'Primera entrega/21.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/21.png"
+              alt="Pared Gujarat 303"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Gujarat 303</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared diamante imperial"
+          onclick="
+            openModal(
+              'Pared Diamante Imperial',
+              'Paredes 30×60',
+              'Primera entrega/22.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/22.png"
+              alt="Pared Diamante Imperial"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Diamante Imperial</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared hexágono mármol blanco"
+          onclick="
+            openModal(
+              'Pared Hexágono Mármol Blanco',
+              'Paredes 30×60',
+              'Primera entrega/23.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/23.png"
+              alt="Pared Hexágono Mármol Blanco"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Hexágono Mármol Blanco</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared mármol gris veteado"
+          onclick="
+            openModal(
+              'Pared Mármol Gris Veteado',
+              'Paredes 30×60',
+              'Primera entrega/24.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/24.png"
+              alt="Pared Mármol Gris Veteado"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Mármol Gris Veteado</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared calacata cafe"
+          onclick="
+            openModal(
+              'Pared Calacata Cafe',
+              'Paredes 30×60',
+              'Primera entrega/25.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/25.png"
+              alt="Pared Calacata Cafe"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Calacata Cafe</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared prisma blanco"
+          onclick="
+            openModal(
+              'Pared Prisma Blanco',
+              'Paredes 30×60',
+              'Primera entrega/26.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/26.png"
+              alt="Pared Prisma Blanco"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Prisma Blanco</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared stone mix beige"
+          onclick="
+            openModal(
+              'Pared Stone Mix Beige',
+              'Paredes 30×60',
+              'Primera entrega/27.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/27.png"
+              alt="Pared Stone Mix Beige"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Stone Mix Beige</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="paredes"
+          data-name="pared striped grey"
+          onclick="
+            openModal(
+              'Pared Striped Grey',
+              'Paredes 30×60',
+              'Primera entrega/28.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Primera entrega/28.png"
+              alt="Pared Striped Grey"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Pared Striped Grey</div>
+            <div class="product-collection">Paredes 30×60</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+
+        <!-- =================== PORCELANATO 60x120 =================== -->
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso armania black"
+          onclick="
+            openModal(
+              'Piso Armania Black',
+              'Porcelanato 60×120',
+              'Segunda entrega/1.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/1.png"
+              alt="Piso Armania Black"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Armania Black</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso artize black hg"
+          onclick="
+            openModal(
+              'Piso Artize Black HG',
+              'Porcelanato 60×120',
+              'Segunda entrega/2.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/2.png"
+              alt="Piso Artize Black HG"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Artize Black HG</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">HG</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso charm black hg"
+          onclick="
+            openModal(
+              'Piso Charm Black HG',
+              'Porcelanato 60×120',
+              'Segunda entrega/3.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/3.png"
+              alt="Piso Charm Black HG"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Charm Black HG</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">HG</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso cimeelio red hg"
+          onclick="
+            openModal(
+              'Piso Cimeelio Red HG',
+              'Porcelanato 60×120',
+              'Segunda entrega/4.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/4.png"
+              alt="Piso Cimeelio Red HG"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Cimeelio Red HG</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">HG</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso delton black hg"
+          onclick="
+            openModal(
+              'Piso Delton Black HG',
+              'Porcelanato 60×120',
+              'Segunda entrega/5.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/5.png"
+              alt="Piso Delton Black HG"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Delton Black HG</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">HG</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso narciso aqua hg"
+          onclick="
+            openModal(
+              'Piso Narciso Aqua HG',
+              'Porcelanato 60×120',
+              'Segunda entrega/6.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/6.png"
+              alt="Piso Narciso Aqua HG"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Narciso Aqua HG</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">HG</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso cloud white hg"
+          onclick="
+            openModal(
+              'Piso Cloud White HG',
+              'Porcelanato 60×120',
+              'Segunda entrega/7.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/7.png"
+              alt="Piso Cloud White HG"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Cloud White HG</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">HG</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso venzo natural hg"
+          onclick="
+            openModal(
+              'Piso Venzo Natural HG',
+              'Porcelanato 60×120',
+              'Segunda entrega/8.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/8.png"
+              alt="Piso Venzo Natural HG"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Venzo Natural HG</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">HG</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso pietra nobel nero hg"
+          onclick="
+            openModal(
+              'Piso Pietra Nobel Nero HG',
+              'Porcelanato 60×120',
+              'Segunda entrega/9.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/9.png"
+              alt="Piso Pietra Nobel Nero HG"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Pietra Nobel Nero HG</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">HG</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso essence blue matt"
+          onclick="
+            openModal(
+              'Piso Essence Blue Matt',
+              'Porcelanato 60×120',
+              'Segunda entrega/10.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/10.png"
+              alt="Piso Essence Blue Matt"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Essence Blue Matt</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">Mate</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso burkina gold"
+          onclick="
+            openModal(
+              'Piso Burkina Gold',
+              'Porcelanato 60×120',
+              'Segunda entrega/11.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/11.png"
+              alt="Piso Burkina Gold"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Burkina Gold</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso ana black"
+          onclick="
+            openModal(
+              'Piso Ana Black',
+              'Porcelanato 60×120',
+              'Segunda entrega/12.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/12.png"
+              alt="Piso Ana Black"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Ana Black</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso empirial white carving mate"
+          onclick="
+            openModal(
+              'Piso Empirial White Carving Mate',
+              'Porcelanato 60×120',
+              'Segunda entrega/13.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/13.png"
+              alt="Piso Empirial White Carving Mate"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Empirial White Carving Mate</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">Carving</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso jal white carving mate"
+          onclick="
+            openModal(
+              'Piso Jal White Carving Mate',
+              'Porcelanato 60×120',
+              'Segunda entrega/14.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/14.png"
+              alt="Piso Jal White Carving Mate"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Jal White Carving Mate</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">Carving</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso black gold brillante"
+          onclick="
+            openModal(
+              'Piso Black Gold Brillante',
+              'Porcelanato 60×120',
+              'Segunda entrega/15.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/15.png"
+              alt="Piso Black Gold Brillante"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Black Gold Brillante</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">Brillante</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso onix gray"
+          onclick="
+            openModal(
+              'Piso Onix Gray',
+              'Porcelanato 60×120',
+              'Segunda entrega/16.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/16.png"
+              alt="Piso Onix Gray"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Onix Gray</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso indigo white hg"
+          onclick="
+            openModal(
+              'Piso Indigo White HG',
+              'Porcelanato 60×120',
+              'Segunda entrega/17.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/17.png"
+              alt="Piso Indigo White HG"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Indigo White HG</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">HG</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso moonlite carving mate"
+          onclick="
+            openModal(
+              'Piso Moonlite Carving Mate',
+              'Porcelanato 60×120',
+              'Segunda entrega/18.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/18.png"
+              alt="Piso Moonlite Carving Mate"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Moonlite Carving Mate</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">Carving</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso black empire"
+          onclick="
+            openModal(
+              'Piso Black Empire',
+              'Porcelanato 60×120',
+              'Segunda entrega/19.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/19.png"
+              alt="Piso Black Empire"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Black Empire</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso cloud white matt"
+          onclick="
+            openModal(
+              'Piso Cloud White Matt',
+              'Porcelanato 60×120',
+              'Segunda entrega/20.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/20.png"
+              alt="Piso Cloud White Matt"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Cloud White Matt</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <div class="product-tag">Mate</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="porcelanatos"
+          data-name="piso geométrico"
+          onclick="
+            openModal(
+              'Piso Geométrico',
+              'Porcelanato 60×120',
+              'Segunda entrega/21.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/21.png"
+              alt="Piso Geométrico"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Geométrico</div>
+            <div class="product-collection">Porcelanato 60×120</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+
+        <!-- =================== MALLAS CRISTANAC =================== -->
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac carnaval verde"
+          onclick="
+            openModal(
+              'Cristanac Carnaval Verde',
+              'Mallas 30×30',
+              'Segunda entrega/22.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/22.png"
+              alt="Cristanac Carnaval Verde"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac Carnaval Verde</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac stone rojo gris"
+          onclick="
+            openModal(
+              'Cristanac Stone Rojo Gris',
+              'Mallas 30×30',
+              'Segunda entrega/23.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/23.png"
+              alt="Cristanac Stone Rojo Gris"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac Stone Rojo Gris</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac onix 3d"
+          onclick="
+            openModal(
+              'Cristanac Onix 3D',
+              'Mallas 30×30',
+              'Segunda entrega/24.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/24.png"
+              alt="Cristanac Onix 3D"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac Onix 3D</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <div class="product-tag">3D</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac ocre verde"
+          onclick="
+            openModal(
+              'Cristanac Ocre Verde',
+              'Mallas 30×30',
+              'Segunda entrega/25.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/25.png"
+              alt="Cristanac Ocre Verde"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac Ocre Verde</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac mosaico verde"
+          onclick="
+            openModal(
+              'Cristanac Mosaico Verde',
+              'Mallas 30×30',
+              'Segunda entrega/26.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/26.png"
+              alt="Cristanac Mosaico Verde"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac Mosaico Verde</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac carnaval azul"
+          onclick="
+            openModal(
+              'Cristanac Carnaval Azul',
+              'Mallas 30×30',
+              'Segunda entrega/27.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/27.png"
+              alt="Cristanac Carnaval Azul"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac Carnaval Azul</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac mrc cobalto"
+          onclick="
+            openModal(
+              'Cristanac MRC Cobalto',
+              'Mallas 30×30',
+              'Segunda entrega/28.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/28.png"
+              alt="Cristanac MRC Cobalto"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac MRC Cobalto</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac pastillado marrón"
+          onclick="
+            openModal(
+              'Cristanac Pastillado Marrón',
+              'Mallas 30×30',
+              'Segunda entrega/29.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/29.png"
+              alt="Cristanac Pastillado Marrón"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac Pastillado Marrón</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac nacar marrón"
+          onclick="
+            openModal(
+              'Cristanac Nacar Marrón',
+              'Mallas 30×30',
+              'Segunda entrega/30.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/30.png"
+              alt="Cristanac Nacar Marrón"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac Nacar Marrón</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac opal blue"
+          onclick="
+            openModal(
+              'Cristanac Opal Blue',
+              'Mallas 30×30',
+              'Segunda entrega/31.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/31.png"
+              alt="Cristanac Opal Blue"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac Opal Blue</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac carnaval naranja"
+          onclick="
+            openModal(
+              'Cristanac Carnaval Naranja',
+              'Mallas 30×30',
+              'Segunda entrega/32.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/32.png"
+              alt="Cristanac Carnaval Naranja"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac Carnaval Naranja</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac castellon"
+          onclick="
+            openModal(
+              'Cristanac Castellon',
+              'Mallas 30×30',
+              'Segunda entrega/33.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/33.png"
+              alt="Cristanac Castellon"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac Castellon</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="mallas"
+          data-name="cristanac amatista azul"
+          onclick="
+            openModal(
+              'Cristanac Amatista Azul',
+              'Mallas 30×30',
+              'Segunda entrega/34.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/34.png"
+              alt="Cristanac Amatista Azul"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Cristanac Amatista Azul</div>
+            <div class="product-collection">Mallas 30×30</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+
+        <!-- =================== PISOS 45x45 =================== -->
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso piedra de río"
+          onclick="
+            openModal(
+              'Piso Piedra de Río',
+              'Pisos 45×45',
+              'Segunda entrega/35.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/35.png"
+              alt="Piso Piedra de Río"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Piedra de Río</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso piedra laja"
+          onclick="
+            openModal(
+              'Piso Piedra Laja',
+              'Pisos 45×45',
+              'Segunda entrega/36.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/36.png"
+              alt="Piso Piedra Laja"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Piedra Laja</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso pebble walkway"
+          onclick="
+            openModal(
+              'Piso Pebble Walkway',
+              'Pisos 45×45',
+              'Segunda entrega/37.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/37.png"
+              alt="Piso Pebble Walkway"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Pebble Walkway</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso madera rimini"
+          onclick="
+            openModal(
+              'Piso Madera Rimini',
+              'Pisos 45×45',
+              'Segunda entrega/38.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/38.png"
+              alt="Piso Madera Rimini"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Madera Rimini</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso rústico tampe"
+          onclick="
+            openModal(
+              'Piso Rústico Tampe',
+              'Pisos 45×45',
+              'Segunda entrega/39.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/39.png"
+              alt="Piso Rústico Tampe"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Rústico Tampe</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso rústico dante"
+          onclick="
+            openModal(
+              'Piso Rústico Dante',
+              'Pisos 45×45',
+              'Segunda entrega/40.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/40.png"
+              alt="Piso Rústico Dante"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Rústico Dante</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso quartz"
+          onclick="
+            openModal('Piso Quartz', 'Pisos 45×45', 'Segunda entrega/41.png')
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/41.png"
+              alt="Piso Quartz"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Quartz</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso dream"
+          onclick="
+            openModal('Piso Dream', 'Pisos 45×45', 'Segunda entrega/42.png')
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/42.png"
+              alt="Piso Dream"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Dream</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso rústico adagio beige"
+          onclick="
+            openModal(
+              'Piso Rústico Adagio Beige',
+              'Pisos 45×45',
+              'Segunda entrega/43.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/43.png"
+              alt="Piso Rústico Adagio Beige"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Rústico Adagio Beige</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso carrara lux"
+          onclick="
+            openModal(
+              'Piso Carrara Lux',
+              'Pisos 45×45',
+              'Segunda entrega/44.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/44.png"
+              alt="Piso Carrara Lux"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Carrara Lux</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso onix cinza"
+          onclick="
+            openModal(
+              'Piso Onix Cinza',
+              'Pisos 45×45',
+              'Segunda entrega/45.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/45.png"
+              alt="Piso Onix Cinza"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Onix Cinza</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso madrid"
+          onclick="
+            openModal('Piso Madrid', 'Pisos 45×45', 'Segunda entrega/46.png')
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/46.png"
+              alt="Piso Madrid"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Madrid</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso madera messina"
+          onclick="
+            openModal(
+              'Piso Madera Messina',
+              'Pisos 45×45',
+              'Segunda entrega/47.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/47.png"
+              alt="Piso Madera Messina"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Madera Messina</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso tampe"
+          onclick="
+            openModal('Piso Tampe', 'Pisos 45×45', 'Segunda entrega/48.png')
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/48.png"
+              alt="Piso Tampe"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Tampe</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso cadis"
+          onclick="
+            openModal('Piso Cadis', 'Pisos 45×45', 'Segunda entrega/49.png')
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/49.png"
+              alt="Piso Cadis"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Cadis</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+        <div
+          class="product-card anim-fade-up"
+          data-category="pisos"
+          data-name="piso báltico"
+          onclick="
+            openModal('Piso Báltico', 'Pisos 45×45', 'Segunda entrega/50.png')
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Segunda entrega/50.png"
+              alt="Piso Báltico"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Piso Báltico</div>
+            <div class="product-collection">Pisos 45×45</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+      </div>
+      <!-- end allProductsGrid -->
+      <div class="no-results" id="noResults">
+        No se encontraron productos con ese nombre.
+      </div>
+    </section>
+
+    <!-- SANITARIOS -->
+    <div class="separator"></div>
+    <section id="sanitarios" style="margin-top: 80px">
+      <div class="section-header anim-fade-up">
+        <div>
+          <div class="section-eyebrow">Colección Premium · 2026</div>
+          <h2 class="section-title">SANITA<em>RIOS</em></h2>
+          <div class="section-spec">Línea Premium</div>
+        </div>
+        <p class="section-desc">
+          Diseños elegantes, tecnología avanzada y acabados de primera calidad
+          para transformar cada espacio.
+        </p>
+      </div>
+
+      <div class="product-grid" id="sanitariosGrid">
+        <div
+          class="product-card anim-fade-up"
+          data-category="sanitarios"
+          data-name="inodoro savona blanco"
+          onclick="
+            openModal(
+              'Inodoro Savona Blanco',
+              'Sanitarios Premium',
+              'Sanitarios/1.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Sanitarios/1.png"
+              alt="Inodoro Savona Blanco"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Inodoro Savona Blanco</div>
+            <div class="product-collection">Sanitarios Premium</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+
+        <div
+          class="product-card anim-fade-up"
+          data-category="sanitarios"
+          data-name="lavamanos monaco"
+          onclick="
+            openModal(
+              'Lavamanos Monaco',
+              'Sanitarios Premium',
+              'Sanitarios/2.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Sanitarios/2.png"
+              alt="Lavamanos Monaco"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Lavamanos Monaco</div>
+            <div class="product-collection">Sanitarios Premium</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+
+        <div
+          class="product-card anim-fade-up"
+          data-category="sanitarios"
+          data-name="inodoro venecia slim"
+          onclick="
+            openModal(
+              'Inodoro Venecia Slim',
+              'Sanitarios Premium',
+              'Sanitarios/3.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Sanitarios/3.png"
+              alt="Inodoro Venecia Slim"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Inodoro Venecia Slim</div>
+            <div class="product-collection">Sanitarios Premium</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+
+        <div
+          class="product-card anim-fade-up"
+          data-category="sanitarios"
+          data-name="lavamanos florencia"
+          onclick="
+            openModal(
+              'Lavamanos Florencia',
+              'Sanitarios Premium',
+              'Sanitarios/4.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Sanitarios/4.png"
+              alt="Lavamanos Florencia"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Lavamanos Florencia</div>
+            <div class="product-collection">Sanitarios Premium</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+
+        <div
+          class="product-card anim-fade-up"
+          data-category="sanitarios"
+          data-name="inodoro square elongado"
+          onclick="
+            openModal(
+              'Inodoro Square Elongado',
+              'Sanitarios Premium',
+              'Sanitarios/5.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Sanitarios/5.png"
+              alt="Inodoro Square Elongado"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Inodoro Square Elongado</div>
+            <div class="product-collection">Sanitarios Premium</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+
+        <div
+          class="product-card anim-fade-up"
+          data-category="sanitarios"
+          data-name="lavamanos roma suspendido"
+          onclick="
+            openModal(
+              'Lavamanos Roma Suspendido',
+              'Sanitarios Premium',
+              'Sanitarios/6.png',
+            )
+          "
+        >
+          <div class="product-img-wrap">
+            <img
+              class="product-img"
+              src="Sanitarios/6.png"
+              alt="Lavamanos Roma Suspendido"
+              loading="lazy"
+            />
+            <div class="product-overlay"></div>
+            <div class="product-shine"></div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Lavamanos Roma Suspendido</div>
+            <div class="product-collection">Sanitarios Premium</div>
+            <span class="product-cta">Ver más →</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <div class="cta-banner anim-fade-up" id="contacto">
+      <div>
+        <h2 class="cta-banner-title">Haz Tu<em>Pedido</em></h2>
+      </div>
+      <p class="cta-banner-body">
+        Transformamos espacios con cerámicas de calidad excepcional. Más de 20
+        años creando ambientes únicos con diseños innovadores y materiales
+        premium.
+      </p>
+      <a
+        href="https://wa.me/573128019770?text=%C2%A1Hola!%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20productos%20de%20cer%C3%A1mica%20y%20porcelanatos."
+        target="_blank"
+        class="cta-btn"
+        >Contáctanos Ahora</a
+      >
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <img src="logo.png" alt="DecorTiles Logo" class="footer-logo" />
+          <div class="footer-brand">Decor<span>tiles</span></div>
+          <div class="footer-brand-sub">Cerámica S.A.S.</div>
+          <p class="footer-desc">
+            Transformamos espacios con cerámicas de calidad excepcional. Más de
+            20 años creando ambientes únicos con diseños innovadores.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Medellín</h4>
+          <a href="https://maps.app.goo.gl/9qjm1brWzKf7HE2y8" target="_blank"
+            ><p>Cl. 50 #56b-22<br />La Candelaria</p></a
+          >
+          <a
+            href="https://wa.me/573128019770?text=%C2%A1Hola!%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20productos%20de%20cer%C3%A1mica%20y%20porcelanatos."
+            target="_blank"
+            >+57 312 801 9770</a
+          >
+        </div>
+        <div class="footer-col">
+          <h4>Barranquilla</h4>
+          <p>Cra 35 #29B-42<br />Cra 30 #24-58</p>
+          <a
+            href="https://wa.me/573128019770?text=%C2%A1Hola!%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20productos%20de%20cer%C3%A1mica%20y%20porcelanatos."
+            target="_blank"
+            >+57 312 801 9770</a
+          >
+          <a
+            href="https://wa.me/573013310178?text=%C2%A1Hola!%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20productos%20de%20cer%C3%A1mica%20y%20porcelanatos."
+            target="_blank"
+            >+57 301 331 01 78</a
+          >
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="mailto:contacto@decorcolombiatiles.com"
+            >contacto@<br />decorcolombiatiles.com</a
+          >
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy"
+          >© 2026 Decortiles Cerámica S.A.S. — Todos los derechos
+          reservados</span
+        >
+        <div class="footer-gold-line"></div>
+        <span class="footer-copy">Colección 2026</span>
+      </div>
+    </footer>
+
+    <!-- WHATSAPP -->
+    <a
+      href="https://wa.me/573128019770?text=Hola!%20Me%20interesa%20el%20catálogo%20DECORTILES%202026."
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="WhatsApp DECORTILES"
+    >
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        />
+      </svg>
+    </a>
+
+    <!-- MODAL -->
+    <div
+      class="modal-overlay"
+      id="modalOverlay"
+      onclick="closeModalOnBg(event)"
+    >
+      <div class="modal" id="modal">
+        <button class="modal-close" onclick="closeModal()" aria-label="Cerrar">
+          ✕
+        </button>
+        <div class="modal-img-wrap">
+          <img class="modal-img" id="modalImg" src="" alt="" />
+        </div>
+        <div class="modal-info">
+          <div class="modal-eyebrow" id="modalCat">Categoría</div>
+          <h2 class="modal-title" id="modalTitle">Nombre del Producto</h2>
+          <div class="modal-divider"></div>
+          <p class="modal-desc">
+            Cerámica de alta calidad con acabados premium. Ideal para interiores
+            y exteriores modernos. Consulta disponibilidad y precios con
+            nuestros asesores.
+          </p>
+          <a href="#" class="modal-wa" id="modalWa" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+              />
+            </svg>
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // ===== HERO PARALLAX =====
+      const heroImg = document.getElementById("heroImg");
+      heroImg.style.backgroundImage = "url('Primera entrega/1.png')";
+      window.addEventListener("scroll", () => {
+        const scrolled = window.pageYOffset;
+        if (scrolled < window.innerHeight) {
+          heroImg.style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+      });
+
+      // ===== HERO PARTICLES =====
+      const particles = document.getElementById("heroParticles");
+      for (let i = 0; i < 20; i++) {
+        const span = document.createElement("span");
+        span.style.setProperty("--x", Math.random() * 100 + "%");
+        span.style.setProperty("--y", Math.random() * 100 + "%");
+        span.style.setProperty("--d", 6 + Math.random() * 8 + "s");
+        span.style.setProperty("--delay", Math.random() * 6 + "s");
+        particles.appendChild(span);
+      }
+
+      // ===== FILTER =====
+      let currentFilter = "todos";
+      let currentSearch = "";
+
+      function setFilter(cat, btn) {
+        currentFilter = cat;
+        document
+          .querySelectorAll(".filter-btn")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const mainGrid = document.getElementById("allProductsGrid");
+        const noResults = document.getElementById("noResults");
+        const sanitariosSection = document.getElementById("sanitarios");
+
+        if (cat === "sanitarios") {
+          // Mostrar solo sanitarios, ocultar grid principal y mensaje de no resultados
+          mainGrid.style.display = "none";
+          noResults.style.display = "none";
+          sanitariosSection.style.display = "";
+        } else if (cat === "todos") {
+          // Mostrar todo
+          mainGrid.style.display = "";
+          sanitariosSection.style.display = "";
+          applyFilters();
+        } else {
+          // Mostrar grid principal filtrado, ocultar sección sanitarios
+          mainGrid.style.display = "";
+          sanitariosSection.style.display = "none";
+          applyFilters();
+        }
+      }
+
+      function filterProducts() {
+        currentSearch = document
+          .getElementById("searchInput")
+          .value.toLowerCase()
+          .trim();
+        applyFilters();
+      }
+
+      function applyFilters() {
+        const cards = document.querySelectorAll(
+          "#allProductsGrid .product-card",
+        );
+        let visible = 0;
+        cards.forEach((card) => {
+          const cat = card.dataset.category;
+          const name = card.dataset.name || "";
+          const matchCat = currentFilter === "todos" || cat === currentFilter;
+          const matchSearch =
+            currentSearch === "" || name.includes(currentSearch);
+          if (matchCat && matchSearch) {
+            card.classList.remove("hidden");
+            visible++;
+          } else {
+            card.classList.add("hidden");
+          }
+        });
+        const noRes = document.getElementById("noResults");
+        noRes.style.display = visible === 0 ? "block" : "none";
+      }
+
+      // ===== MODAL =====
+      function openModal(name, cat, img) {
+        document.getElementById("modalTitle").textContent = name;
+        document.getElementById("modalCat").textContent = cat;
+        document.getElementById("modalImg").src = img;
+        document.getElementById("modalImg").alt = name;
+        const waMsg = encodeURIComponent(
+          "Hola! Me interesa el producto: " + name + " (" + cat + ")",
+        );
+        document.getElementById("modalWa").href =
+          "https://wa.me/573128019770?text=" + waMsg;
+        document.getElementById("modalOverlay").classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        document.getElementById("modalOverlay").classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      function closeModalOnBg(e) {
+        if (e.target === document.getElementById("modalOverlay")) closeModal();
+      }
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+
+      // ===== INTERSECTION OBSERVER (scroll animations) =====
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("anim-in");
+            }
+          });
+        },
+        { threshold: 0.08, rootMargin: "0px 0px -40px 0px" },
+      );
+
+      document
+        .querySelectorAll(
+          ".anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-zoom-in",
+        )
+        .forEach((el) => {
+          observer.observe(el);
+        });
+
+      // ===== STAGGER product cards =====
+      document
+        .querySelectorAll("#allProductsGrid .product-card")
+        .forEach((card, i) => {
+          card.style.transitionDelay = (i % 8) * 0.05 + "s";
+          observer.observe(card);
+        });
+
+      // ===== STAGGER sanitarios cards =====
+      document
+        .querySelectorAll("#sanitariosGrid .product-card")
+        .forEach((card, i) => {
+          card.style.transitionDelay = (i % 8) * 0.05 + "s";
+          observer.observe(card);
+        });
+
+      // Legacy woodImg support
+      const woodImgEl = document.getElementById("woodImg");
+      if (woodImgEl) {
+        woodImgEl.style.backgroundImage = "url('Primera entrega/29.png')";
+        woodImgEl.style.backgroundSize = "cover";
+        woodImgEl.style.backgroundPosition = "center";
+      }
+    </script>
+  </body>
+</html>
